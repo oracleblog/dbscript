@@ -1,4 +1,6 @@
 REM The script use for oracle 10g and 11g
+REM
+REM
 select snap_id,to_char(end_interval_time, 'yyyy-mm-dd hh24:mi:ss') as end_interval_time,
        round(delta_transaction / delta_time, 0) as transaction_per_sec
   from (select snap_id,
